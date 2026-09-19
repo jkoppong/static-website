@@ -3,12 +3,11 @@ name: Deploy Static Website to S3
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   build-and-deploy:
                runs-on: ubuntu-latest
-
 
                steps:
                  - name: Checkout repository
@@ -19,6 +18,7 @@ jobs:
                    uses: actions/setup-python@v5
                    with:
                      python-version: '3.14'
+
 
                 - name: Built site
                   run: pelican content
