@@ -32,4 +32,4 @@ jobs:
           aws-region: eu-west-2
 
       - name: Deploy to S3
-        run: aws s3 sync output/ s3://projectjk-project1-staticwebsite
+        run: aws s3 sync output/ s3://jk-project1-staticwebsite
